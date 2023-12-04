@@ -8,7 +8,7 @@ public class Calling {
 		MethodWithNoArguement m = new MethodWithNoArguement();
 		m.getUserName(uName);
 		m.getMobile(9876543210l);
-		
+		System.out.println("Hello Priti");
 
 	}
 	
