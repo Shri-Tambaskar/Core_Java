@@ -1,6 +1,6 @@
 package com.mkpits.methods;
 
-public class MethodReturnAndArgs {
+public class MethodReturnAndArgs extends Calling{
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -8,6 +8,8 @@ public class MethodReturnAndArgs {
 		MethodReturnAndArgs m = new MethodReturnAndArgs();
 		String uValue = m.getDetails(1,10000);
 		System.out.println(uValue);
+		
+		System.out.println(m.name);
 
 	}
 

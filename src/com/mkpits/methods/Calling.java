@@ -1,6 +1,8 @@
 package com.mkpits.methods;
 
-public class Calling {
+public abstract class Calling {
+	
+	public String name = "Shri";
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
