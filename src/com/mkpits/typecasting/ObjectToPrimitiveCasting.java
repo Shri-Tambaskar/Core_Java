@@ -1,6 +1,6 @@
 package com.mkpits.typecasting;
 
-public class PrimitiveToObjectCasting {
+public class ObjectToPrimitiveCasting {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -14,8 +14,13 @@ public class PrimitiveToObjectCasting {
 		int num1 = Integer.parseInt(str1);
 		int num2 = Integer.parseInt(str2);
 		
-		String str3 = str1 + str2;
-		System.out.println(num1 + num2);
+		String input1 = "23.456";
+		String input2 = "56.21";
+		
+		float f1 = Float.parseFloat(input1);
+		float f2 = Float.parseFloat(input2);
+		
+		System.out.println(f1 + f2);
 
 	}
 
