@@ -8,12 +8,19 @@ public class ConstructorObject {
 		ConstructorObject object = new ConstructorObject();
 		object.getMember();
 		
+		//Another way to call method using instance
+		new ConstructorObject().getMember();
+		
 		
 		ConstructorObject object2 = new ConstructorObject(440034, 2301);
 		object2.getMember();
+//		
+//		ConstructorObject object3 = new ConstructorObject(object);
+//		object3.getMember();
 		
-		ConstructorObject object3 = new ConstructorObject(object2);
-		object3.getMember();
+		new ConstructorObject(new ConstructorObject()).getMember();
+		
+		new ConstructorObject(new ConstructorObject(56334,978)).getMember();
 		
 	}
 	
