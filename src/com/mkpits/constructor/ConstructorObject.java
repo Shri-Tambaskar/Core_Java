@@ -25,6 +25,7 @@ public class ConstructorObject {
 	}
 	
 	public void getMember() {
+		int local = 89;
 		System.out.println("Id is :- "+id + " Pincode is :- "+pinCode);
 	}
 	
