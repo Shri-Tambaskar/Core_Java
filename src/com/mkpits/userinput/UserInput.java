@@ -16,6 +16,11 @@ public class UserInput {
 		float price = scanner.nextFloat();
 		System.out.println(price);
 		
+		System.out.println("Enter Price");
+		float price1 = scanner.nextFloat();
+		System.out.println(price1);
+		
+		
 		InputStreamReader input = new InputStreamReader(System.in);
 		bufferedReader = new BufferedReader(input);
 		
