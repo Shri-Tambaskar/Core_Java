@@ -27,6 +27,8 @@ public class UserInput {
 		UserInput userInput = new UserInput();
 		userInput.getFirstName();
 		userInput.getAge();
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 	}
 	
