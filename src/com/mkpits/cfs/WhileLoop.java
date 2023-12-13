@@ -3,19 +3,33 @@ package com.mkpits.cfs;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+
+import com.mkpits.dataconnection.DBConnection;
 
 public class WhileLoop {
 
-	String name,mobile,age,gender,email;
-	int accountNumber;
-	double balance;
+	public String name,mobile,age,gender,email;
+	public int accountNumber;
+	public double balance;
+	public float deposit;
+	public float withdraw;
 	static BufferedReader reader;
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		
 		WhileLoop loop = new WhileLoop();
-		
 		reader = new BufferedReader(new InputStreamReader(System.in));
+		
+		boolean isConnected = DBConnection.getDBConnection();
+		if(isConnected) {
+			System.out.println("Database Connected....");	
+		}else {
+			System.out.println("Connection Failed");
+		}
+		
 		char ch = 'y';
 		
 		while (ch == 'y' || ch == 'Y') {
@@ -60,20 +74,26 @@ public class WhileLoop {
 		System.out.println("Account Holder Mobile :-"+mobile);
 		System.out.println("Account Holder Age :-"+age);
 		System.out.println("Account Holder Gender :-"+gender);
+		System.out.println("Account Balance is :-"+deposit);
 		
 	}
 
-	private void withdraw() {
+	private void withdraw() throws NumberFormatException, IOException {
+		System.out.println("Enter Deposit Amount");
+		withdraw = Float.parseFloat(reader.readLine());
 		
-		
-	}
-
-	private void deposit() {
-		System.out.println("");
+		deposit = withdraw - deposit;
 		
 	}
 
-	private void createAccount() throws IOException {
+	private void deposit() throws IOException {
+		System.out.println("Enter Deposit Amount");
+		deposit = Float.parseFloat(reader.readLine());
+		
+	}
+
+	private void createAccount() throws Exception {
+		
 		System.out.println("Enter Account Holder Name");
 		name = reader.readLine();	
 		
@@ -91,6 +111,8 @@ public class WhileLoop {
 		
 		accountNumber = (int)Math.floor(Math.random()*1000000);
 		System.out.println("Account Created "+accountNumber);
+		
+		DBConnection.insertData();
 	}
 
 }
