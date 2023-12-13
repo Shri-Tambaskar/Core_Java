@@ -42,6 +42,7 @@ public class SwitchCFS {
 				break;
 
 			default:
+				System.out.println("Enter Valid Choice");
 				break;
 			}
 			System.out.println("Do You Wish to Continue Y|N");
