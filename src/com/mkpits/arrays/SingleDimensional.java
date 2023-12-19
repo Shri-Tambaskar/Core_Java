@@ -3,6 +3,7 @@ package com.mkpits.arrays;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Date;
 
 public class SingleDimensional {
 
@@ -54,5 +55,6 @@ public class SingleDimensional {
 			System.out.println("Name is :- "+name[i]);
 		}
 	}
+	
 
 }
