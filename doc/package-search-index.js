@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.mkpits.arrays"},{"l":"com.mkpits.cfs"},{"l":"com.mkpits.constructor"},{"l":"com.mkpits.dataconnection"},{"l":"com.mkpits.methods"},{"l":"com.mkpits.string"},{"l":"com.mkpits.typecasting"},{"l":"com.mkpits.userinput"}];updateSearchResults();
