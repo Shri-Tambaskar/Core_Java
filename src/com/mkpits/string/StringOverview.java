@@ -12,9 +12,10 @@ public class StringOverview {
 	private void getOverView() {
 		// TODO Auto-generated method stub
 
-		String fName = "SHRIKANT TAMABASKAR";
+		String fName = "      SHRIKANT TAMABASKAR                        ";
 		String lName = "Shrikant";
 
+		System.out.println("Trim the Name " + fName.trim());
 		System.out.println(String.join("#", fName, lName));
 //		String newName = String.join(":", fName, lName);
 //		System.out.println(newName);
