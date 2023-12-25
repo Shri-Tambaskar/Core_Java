@@ -24,6 +24,8 @@ public class StringBufferOverview {
 
 		details.trimToSize();
 		System.out.println(details);
+
+		System.out.println(myStr.indexOf("t", 1));
 	}
 
 }
