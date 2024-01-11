@@ -4,9 +4,6 @@ public class OuterClass {
 
 	int y = 10;
 
-	OuterClass outerClass = new OuterClass();
-	OuterClass.AnotherInnerClass anotherInnerClass = outerClass.new AnotherInnerClass();
-
 	class InnerClass {
 		int x = 90;
 

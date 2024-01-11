@@ -13,6 +13,10 @@ public class CallInnerOuter {
 		System.out.println(innerClass.z);
 
 //		OuterClass.AnotherInnerClass anotherInnerClass = outerClass.new AnotherInnerClass();
+
+		Level myVar = Level.MEDIUM;
+		System.out.println(myVar);
+		System.out.println(Level.HIGH);
 	}
 
 }
