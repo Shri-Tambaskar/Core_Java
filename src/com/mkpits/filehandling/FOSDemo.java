@@ -13,9 +13,10 @@ public class FOSDemo {
 		String str = br.readLine();
 
 		str = str + "\n";
+		byte b[] = str.getBytes();
 
 		FileOutputStream fos = new FileOutputStream("E:\\xyz.txt", true);
-		byte b[] = str.getBytes();
+
 		fos.write(b);
 		fos.close();
 		System.out.println("Data is written");

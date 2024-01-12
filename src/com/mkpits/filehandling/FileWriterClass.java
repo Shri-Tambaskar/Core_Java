@@ -17,6 +17,7 @@ public class FileWriterClass {
 		FileWriter fw = new FileWriter("E:\\login.txt", true);
 		fw.write(str);
 		fw.close();
+		System.out.println("Data is written");
 
 	}
 
