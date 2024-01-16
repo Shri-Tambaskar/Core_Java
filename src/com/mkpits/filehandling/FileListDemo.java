@@ -6,7 +6,7 @@ public class FileListDemo {
 
 	public static void main(String[] args) {
 
-		File f = new File("E:\\Mkpits_Workspace\\Mkpits_Core_Java");
+		File f = new File("E:\\Mkpits_Workspace\\Mkpits_Core_Java\\");
 		String[] str = f.list();
 
 		for (int i = 0; i < str.length; i++) {
