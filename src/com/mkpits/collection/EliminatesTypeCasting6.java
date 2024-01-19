@@ -1,11 +1,13 @@
 package com.mkpits.collection;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class EliminatesTypeCasting6 {
 
 	public static void main(String[] args) {
 
+		List<Integer> l = new ArrayList<Integer>();
 		Integer[] intArr = new Integer[10];
 		intArr[0] = 10;
 		int v = intArr[0];
@@ -24,6 +26,7 @@ public class EliminatesTypeCasting6 {
 		ArrayList<Double> doubleArr = new ArrayList<Double>();
 		doubleArr.add(23.78);
 		double d = doubleArr.get(0);
+		System.out.println(doubleArr.size());
 	}
 
 }
