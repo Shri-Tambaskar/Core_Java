@@ -2,7 +2,6 @@ package com.mkpits.collection;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.StringJoiner;
 
 public class Example2_AddMethod {
 
@@ -14,17 +13,23 @@ public class Example2_AddMethod {
 
 		// Adding elements to object of List interface
 		// Custom elements
+//		al.addFirst("Hello");
 		al.add("Technocrats");
 		al.add("Solutions");
 		al.add(1, "@");
 
-		StringJoiner joiner = new StringJoiner(" # ");
-		joiner.add(al.get(0)).add(al.get(1));
+//		StringJoiner joiner = new StringJoiner(" # ");
+//		joiner.add(al.get(0)).add(al.get(1));
+//
+//		System.out.println(joiner);
+//		// Print all the elements inside the
+//		// List interface object
+//		System.out.println(al);
+//		al.clear();
+//		System.out.println(al);
 
-		System.out.println(joiner);
-		// Print all the elements inside the
-		// List interface object
-		System.out.println(al);
+		System.out.println(al.contains("Technocrats"));
+		System.out.println();
 
 	}
 
